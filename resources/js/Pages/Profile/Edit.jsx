@@ -16,6 +16,8 @@ export default function Edit({ auth, mustVerifyEmail, status }) {
                             mustVerifyEmail={mustVerifyEmail}
                             status={status}
                         /></div>
+            <div class="mb-5"><UpdatePasswordForm /></div>
+            <div class="mb-5"><DeleteUserForm /></div>
             </div>
         </AuthenticatedLayout>
     );
