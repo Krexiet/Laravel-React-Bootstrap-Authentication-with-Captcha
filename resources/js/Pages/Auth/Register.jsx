@@ -103,7 +103,7 @@ export default function Register() {
             <PrimaryButton>
                         Регістрація
             </PrimaryButton>
-            <a class="btn btn btn-secondary ms-2" href="/login">Увійти</a>
+            <Link class="btn btn btn-secondary ms-2" href={route('login')}>Увійти</Link>
             </form>
 
 

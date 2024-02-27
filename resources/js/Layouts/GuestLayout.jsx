@@ -1,3 +1,4 @@
+import { Link } from '@inertiajs/react';
 export default function Guest({ children }) {
     return (
             <div>
@@ -10,7 +11,7 @@ export default function Guest({ children }) {
                     <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Домашня сторінка</a>
+                        <Link class="nav-link active" aria-current="page" href={route('home')}>Домашня сторінка</Link>
                         </li>
                     </ul>
                     </div>

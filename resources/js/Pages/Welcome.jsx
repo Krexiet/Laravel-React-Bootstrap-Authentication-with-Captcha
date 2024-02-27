@@ -13,7 +13,7 @@ export default function Welcome({ auth }) {
                 <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Домашная сторінка</a>
+                    <a class="nav-link active" aria-current="page" href={route('home')}>Домашная сторінка</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#">Ще якась сторінка</a>

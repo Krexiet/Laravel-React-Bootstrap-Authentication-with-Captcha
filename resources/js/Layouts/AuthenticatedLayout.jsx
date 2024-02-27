@@ -5,6 +5,7 @@ import NavLink from '@/Components/NavLink';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
 import { Link } from '@inertiajs/react';
 
+
 export default function Authenticated({ user, header, children }) {
     const [showingNavigationDropdown, setShowingNavigationDropdown] = useState(false);
 
@@ -20,13 +21,13 @@ export default function Authenticated({ user, header, children }) {
                 <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link" href="/">Головна</a>
+                    <Link class="nav-link" href={route('home')}>Головна</Link>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" href="/dashboard">Кабінет користувача</a>
+                    <Link class="nav-link active" href={route('dashboard')}>Кабінет користувача</Link>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href={route('profile.edit')}>Налаштування користувача</a>
+                    <Link class="nav-link" href={route('profile.edit')}>Налаштування користувача</Link>
                     </li>
                 </ul>
                 <span class="navbar-text">

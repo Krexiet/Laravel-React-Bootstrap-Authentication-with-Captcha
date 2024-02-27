@@ -85,7 +85,7 @@ export default function Login({ status, captchaImage }) {
                     <PrimaryButton disabled={processing}>
                         Увійти
                     </PrimaryButton>
-                    <a class="btn btn-secondary ms-2" href="/register">Регістрація</a>
+                    <Link class="btn btn-secondary ms-2" href={route('register')}>Регістрація</Link>
                 </form>
             </div>
         </GuestLayout>
